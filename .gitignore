@@ -1,6 +1,40 @@
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-.env
+# Python environments
 .venv/
+.venv-*/
 venv/
+env/
+
+# Python cache and test/tool outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local datasets (large and potentially sensitive)
+/data/
+
+# Downloaded or generated model artifacts
+/yolov8n-cls.pt
+checkpoints/
+weights/
+runs/
+outputs/
+wandb/
+
+# Local logs and environment variables
+*.log
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
