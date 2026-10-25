@@ -20,6 +20,20 @@ The training notebook, [`notebooks/federated-learning-of-medical-imaging.ipynb`]
 
 The notebook saves model checkpoints and round-wise accuracy results to its Kaggle working directory.
 
+## Binary SIPaKMeD Experiment
+
+[`federated_sipakmed.py`](federated_sipakmed.py) provides a separate PyTorch/Ultralytics experiment for binary normal-versus-abnormal classification. It simulates federated training locally and supports FedAvg, FedProx, and clustered training. The recorded experiment results are in [`notebooks/federated_sipakmed_results.ipynb`](notebooks/federated_sipakmed_results.ipynb).
+
+Place the SIPaKMeD class folders under `data/sipakmed_binary/` (or pass another path with `--data`). Download the classification checkpoint separately; the default is `yolov8n-cls.pt`. Dataset files and the downloaded checkpoint are intentionally excluded from Git.
+
+Run the experiment from the repository root after installing `requirements.txt`:
+
+```powershell
+python federated_sipakmed.py --data data/sipakmed_binary --weights yolov8n-cls.pt
+```
+
+The binary class mapping and training options are documented in the script. Verify that the mapping matches your study protocol before interpreting or reporting results.
+
 ## Dataset
 
 The project uses SIPaKMeD, a collection of cervical cell images organized into five classes:
