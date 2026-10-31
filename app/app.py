@@ -3,6 +3,11 @@ import torch
 import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
+import os
+
+# Resolve model path relative to this script file (works both locally and on Streamlit Cloud)
+_HERE = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(_HERE, "federated_cervical_model.pth")
 
 # ─────────────────────────────────────────────
 # 1. Page Configuration
@@ -350,7 +355,7 @@ def load_trained_model():
     model.classifier[3] = nn.Linear(model.classifier[3].in_features, len(CLASSES))
     try:
         model.load_state_dict(torch.load(
-            "federated_cervical_model.pth", map_location=device, weights_only=True
+            MODEL_PATH, map_location=device, weights_only=True
         ))
     except FileNotFoundError:
         st.error("❌  Model checkpoint not found. Launch from the `app/` directory.")
