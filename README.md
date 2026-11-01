@@ -1,8 +1,8 @@
-<div align="center">
+ <div align="center">
 
 # 🔬 Federated Cervical Cell Image Classification
 
-### A privacy-preserving federated learning framework for cervical cytology, with an interactive diagnostic web app
+### A Privacy-Preserving Federated Learning Framework for Cervical Cytology with an Interactive Diagnostic Web App
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -12,27 +12,56 @@
 </p>
 
 <p>
-  <a href="https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/"><img src="https://img.shields.io/badge/🚀_Live_Demo-Open_the_App-FF4B4B?style=for-the-badge" alt="Live Demo" /></a>
-  <a href="notebooks/federated-learning-of-medical-imaging.ipynb"><img src="https://img.shields.io/badge/📓_Training_Notebook-View-6366F1?style=for-the-badge" alt="Notebook" /></a>
+  <a href="https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Open_the_App-FF4B4B?style=for-the-badge" alt="Live Demo" />
+  </a>
+  <a href="notebooks/federated-learning-of-medical-imaging.ipynb">
+    <img src="https://img.shields.io/badge/📓_Training_Notebook-View-6366F1?style=for-the-badge" alt="Training Notebook" />
+  </a>
 </p>
+
+<br/>
 
 <table>
   <tr>
-    <td align="center"><b>98.21%</b><br/><sub>Federated validation accuracy<br/>(Round 5)</sub></td>
-    <td align="center"><b>93.62%</b><br/><sub>Centralized baseline<br/>validation accuracy</sub></td>
-    <td align="center"><b>3</b><br/><sub>Simulated clients</sub></td>
-    <td align="center"><b>5</b><br/><sub>Federated rounds</sub></td>
-    <td align="center"><b>5</b><br/><sub>Cell classes</sub></td>
+    <td align="center">
+      <h2>98.21%</h2>
+      <sub><b>Federated Validation Accuracy</b></sub><br/>
+      <sub>Round 5</sub>
+    </td>
+    <td align="center">
+      <h2>93.62%</h2>
+      <sub><b>Centralized Baseline Accuracy</b></sub><br/>
+      <sub>Validation</sub>
+    </td>
+    <td align="center">
+      <h2>3</h2>
+      <sub><b>Simulated Clients</b></sub>
+    </td>
+    <td align="center">
+      <h2>5</h2>
+      <sub><b>Federated Rounds</b></sub>
+    </td>
+    <td align="center">
+      <h2>5</h2>
+      <sub><b>Cell Classes</b></sub>
+    </td>
   </tr>
 </table>
 
 <br/>
 
-<img src="assets/app-home.png" alt="Screenshot of the CerviImagingDiag Streamlit application" width="92%" />
-<sub><i>The deployed Streamlit application (landing view).</i></sub>
-**Live demo:** <https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/>
-</div>
+<img src="assets/app-home.png" alt="CerviImagingDiag Streamlit Application Screenshot" width="92%" />
 
+<p>
+  <i>The deployed CerviImagingDiag Streamlit application.</i>
+</p>
+
+<br/>
+
+**🚀 Live Demo:** <a href="https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/">Launch Application</a>
+
+</div>
 ---
 
 ## 📑 Table of Contents
