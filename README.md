@@ -29,9 +29,8 @@
 <br/>
 
 <img src="assets/app-home.png" alt="Screenshot of the CerviImagingDiag Streamlit application" width="92%" />
-**Live demo:** <https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/>
 <sub><i>The deployed Streamlit application (landing view).</i></sub>
-
+**Live demo:** <https://federated-cervical-imaging-lpappr2uyxkahh5ydjla3c5.streamlit.app/>
 </div>
 
 ---
